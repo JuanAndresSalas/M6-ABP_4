@@ -12,7 +12,7 @@ app.set("view engine", "hbs")
 app.use(express.static("public"))
 
 hbs.registerPartials(join(__dirname,"views/partials"))
-console.log(join(__dirname,"views/partials"))
+
 
 app.use(indexRoutes)
 app.listen(3000, function(){
