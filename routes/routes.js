@@ -37,4 +37,8 @@ router.get("/formEliminar", (req, res) =>{
     res.send('<script>alert("Plato Eliminado"); window.location.href = "/index";</script>');
 })
 
+router.get("*", (req, res) =>{
+    res.send('<h1>Página No Encontrada</h1><a href="/index">HOME</a>')
+})
+
 export default router
